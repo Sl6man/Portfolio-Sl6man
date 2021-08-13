@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 const firstPage = ()=>{
     gsap.from('.left', {opacity: 0, duration: 1, x: -50})
     gsap.from('.rh', {opacity: 0, duration:1.3, x: +50})
