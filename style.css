@@ -234,6 +234,10 @@ body {
   color: rgb(145, 54, 230);
 }
 
+.s4 .acs i:hover {
+  color: rgb(145, 54, 230);
+}
+
 @media only screen and (max-width: 450px) {
   .s1 h2 {
     font-size: 4rem;
