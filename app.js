@@ -1,3 +1,18 @@
+gsap.registerPlugin(ScrollTrigger);
+
+
+let ai1 = gsap.from('.pop1', {y:+250, duration: 1})
+let ai2 = gsap.from('.pop2', {y:+250, duration: 1, delay:.6})
+let ai3 = gsap.from('.pop3', {y:+250, duration: 1, delay:2})
+let ai4 = gsap.from('.pop4', {y:+250, duration: 1, delay:2})
+
+
+ai1.yoyo(true).repeat(99).timeScale(.2).play(0.5)
+ai2.yoyo(true).repeat(99).timeScale(.3).play(0.5)
+ai3.yoyo(true).repeat(99).timeScale(.2).play(0.5)
+ai4.yoyo(true).repeat(99).timeScale(.4).play(0.5)
+
+
 const firstPage = ()=>{
     gsap.from('.left', {opacity: 0, duration: 1, x: -50})
     gsap.from('.rh', {opacity: 0, duration:1.3, x: +50})
@@ -71,6 +86,7 @@ const p4 = document.querySelector('.s4')
 
 clicker.addEventListener('click', ()=>{
     loader.style.left=  0
+    document.querySelector('.thepop').style.display = 'none'
     setTimeout(()=>{
         loader.style.left = "-100%"
         p1.style.display = "none"
@@ -96,8 +112,10 @@ clicker3.addEventListener('click', ()=>{
         loader.style.left = "-100%"
         p3.style.display = "none"
         p4.style.display = "block"
-        forPage()
+        forPage()  
+        document.querySelector('.thepop').style.display = 'block'
     }, 1000)
+    
 })
 
 back.addEventListener('click', ()=>{
@@ -107,6 +125,7 @@ back.addEventListener('click', ()=>{
         p2.style.display = "none"
         p1.style.display = "block"
         firstPage()
+        document.querySelector('.thepop').style.display = 'block' 
     }, 1000)
 })
 
@@ -121,6 +140,8 @@ back2.addEventListener('click', ()=>{
 })
 
 back3.addEventListener('click', ()=>{
+        document.querySelector('.thepop').style.display = 'none'
+
     loader2.style.right =  0
     setTimeout(()=>{
         loader2.style.right = "-100%"

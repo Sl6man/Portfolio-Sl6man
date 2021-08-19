@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="referrer" content="strict-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
-
     <title>Sl6man</title>
 </head>
 <body>
+    <div class="background">
+    <svg id="visual" viewBox="0 0 1920 540" width="1920" height="540" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+         <g class="thepop">
+            <path class="pop1"
+                d="M0 274L160 274L160 263L320 263L320 278L480 278L480 158L640 158L640 230L800 230L800 320L960 320L960 221L1120 221L1120 136L1280 136L1280 193L1440 193L1440 275L1600 275L1600 161L1760 161L1760 216L1920 216L1920 281L1920 541L1920 541L1760 541L1760 541L1600 541L1600 541L1440 541L1440 541L1280 541L1280 541L1120 541L1120 541L960 541L960 541L800 541L800 541L640 541L640 541L480 541L480 541L320 541L320 541L160 541L160 541L0 541Z"
+                fill="#101922"></path>
+            <path  class="pop2"
+                d="M0 352L160 352L160 349L320 349L320 251L480 251L480 283L640 283L640 341L800 341L800 323L960 323L960 352L1120 352L1120 320L1280 320L1280 340L1440 340L1440 266L1600 266L1600 378L1760 378L1760 367L1920 367L1920 253L1920 541L1920 541L1760 541L1760 541L1600 541L1600 541L1440 541L1440 541L1280 541L1280 541L1120 541L1120 541L960 541L960 541L800 541L800 541L640 541L640 541L480 541L480 541L320 541L320 541L160 541L160 541L0 541Z"
+                fill="#111b25"></path>
+            <path class="pop3"
+                d="M0 335L160 335L160 413L320 413L320 334L480 334L480 359L640 359L640 425L800 425L800 303L960 303L960 348L1120 348L1120 290L1280 290L1280 395L1440 395L1440 352L1600 352L1600 402L1760 402L1760 290L1920 290L1920 341L1920 541L1920 541L1760 541L1760 541L1600 541L1600 541L1440 541L1440 541L1280 541L1280 541L1120 541L1120 541L960 541L960 541L800 541L800 541L640 541L640 541L480 541L480 541L320 541L320 541L160 541L160 541L0 541Z"
+                fill="#121d29"></path>
+            <path class="pop4"
+                d="M0 387L160 387L160 452L320 452L320 481L480 481L480 394L640 394L640 409L800 409L800 400L960 400L960 438L1120 438L1120 453L1280 453L1280 420L1440 420L1440 437L1600 437L1600 393L1760 393L1760 482L1920 482L1920 378L1920 541L1920 541L1760 541L1760 541L1600 541L1600 541L1440 541L1440 541L1280 541L1280 541L1120 541L1120 541L960 541L960 541L800 541L800 541L640 541L640 541L480 541L480 541L320 541L320 541L160 541L160 541L0 541Z"
+                fill="#131f2c"></path>
+         </g>
+    </svg>
+    </div>
     <div class="loaderRh"></div>
     <div class="loader"></div>
     <div class="s1">
@@ -46,7 +64,7 @@
     
     </div>
     <div class="s3">
-        <h2 class=" top">some of my work</h2>
+        <h2 class=" top">some of my works</h2>
         <div class="lin2 top2"></div>
 
 
@@ -80,9 +98,9 @@
         <div class="lin2 top2"></div>
 
         <div class="acs">
-            <a href="https://twitter.com/Sl6man" target="_blank"><i class="fab fa-twitter arrow rh1 rh"></i></a>
-            <a href="https://github.com/Sl6man" target="_blank"><i class="fab fa-github arrow rh2 rh"></i></a>
-            <a href="https://www.instagram.com/5.s.m_/" target="_blank"><i class="fab fa-instagram arrow rh3 rh"></i></a>
+            <a href="https://twitter.com/Sl6man" target="_blank"><i class="fab fa-twitter arrow rh1"></i></a>
+            <a href="https://github.com/Sl6man" target="_blank"><i class="fab fa-github arrow rh2"></i></a>
+            <a href="https://www.instagram.com/5.s.m_/" target="_blank"><i class="fab fa-instagram arrow rh3"></i></a>
             <a href="https://www.tiktok.com/@sultan.alanbari?lang=ar&is_copy_url=1&is_from_webapp=v1 " target="_blank"><i class="fab fa-tiktok arrow rh4"></i></a>
         </div>
 
@@ -93,6 +111,17 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script>
+        // console.log(document.querySelector("#pop1"));
+        //     const tween = KUTE.fromTo(
+        //         '.pop1',
+        //         { path: '.pop1' },
+        //         { path: '.pop2' },
+        //         { repeat: 999, yoyo: true }
+        //     ).start();
+    </script>
 </body>
 </html>
