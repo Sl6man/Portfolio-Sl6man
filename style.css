@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&family=Changa:wght@400;500;700&family=Inter:wght@400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
-  font-family: Arial, Helvetica, sans-serif;
+font-family: 'Quicksand', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #0a1016;
+  background-color: #a3cbff;
   text-transform: capitalize;
   width: 100%;
   /* height: 500vh; */
@@ -29,14 +30,16 @@ body {
   overflow: hidden;
   bottom: 0px;
   transition: all 0.4s;
+
 }
 
 .loader {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: #7fb6fd;
   z-index: 99;
+  
   top: 0;
   left: -100%;
   transition: 0.5s;
@@ -46,7 +49,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: #7fb6fd;
   z-index: 99;
   top: 0;
   right: -100%;
@@ -54,7 +57,7 @@ body {
 }
 
 .s1 {
-  color: rgb(248, 248, 248);
+  color: black;
   align-items: center;
   justify-content: center;
 }
@@ -79,7 +82,7 @@ body {
   width: 10rem;
   margin-right: 4rem;
   margin: 0.5rem 0;
-  background-color: rgb(145, 54, 230);
+  background-color: #260080;
 }
 
 .last {
@@ -94,80 +97,101 @@ body {
   margin-right: 1rem;
 }
 
-.s2 {
-  color: rgb(240, 240, 240);
+.s3 {
+  color: black;
   display: none;
   text-align: start;
+  max-height: 100vh;
+  max-width: 100%;
+  min-width: 50%;
+  margin-left: 1rem;
 }
 
-.s2 h1 {
+.s3 h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
   font-weight: normal;
 }
 
-.s2 h2 {
+.s3 h2 {
   font-size: 4rem;
+} 
+
+.s3 p{
+
 }
 
-.s2 .buttons i {
+.s3 .buttons i {
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   cursor: pointer;
 }
 
-.s2 .skills {
+.s3 .skills {
   margin: 3rem 0;
-  color: #969696;
+color: black;
   display: flex;
   justify-content: space-between;
   /* width: 30rem; */
+  font-size: 2.5rem;
   text-align: center;
 }
-.s2 .skills i {
-  font-size: 6rem;
-  margin-right: 1rem;
+.s3 .skills p {
+
+  margin-right: 2rem;
   transition: 0.3s color;
 }
 
-.s2 .skills i:hover {
-  color: rgb(145, 54, 230);
+.s3 .skills p:hover {
+  color: #260080;
 }
 
-.s2 h4 i {
+.s3 h4 i {
   margin: 0 5rem;
 }
 
-.s3 {
+.s2 {
   height: 100vh;
-  color: rgb(240, 240, 240);
+  max-height: 100vh;
+  max-width: 100%;
+  color: black;
   display: none;
+  margin-left: 1rem;
   /* text-align: center; */
+  width: 70%;
 }
 
-.s3 h2 {
-  font-size: 3rem;
+.s2 h1 {
+  font-size: 4rem;
   margin-top: 10rem;
   font-weight: normal;
 }
 
-.s3 .works {
+.s2 .works {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  align-items: flex-start;
 }
 
-.s3 .works .work1 {
+.s2 p{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: lighter;
+  color: black;
+}
+
+.s2 .works .work1 {
   margin-right: 0.5rem;
   position: relative;
   text-align: center;
 }
 
-.s3 .works .work1 img {
+.s2 .works .work1 img {
   width: 25rem;
 }
 
-.s3 .works .work1 .overlay {
+.s2 .works .work1 .overlay {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -177,13 +201,13 @@ body {
   transition: all 0.5s;
 }
 
-.s3 .works .work1 .overlay p {
+.s2 .works .work1 .overlay p {
   margin-top: 5rem;
   font-size: 2.3rem;
 }
 
-.s3 .works .work1 .overlay button {
-  color: rgb(240, 240, 240);
+.s2 .works .work1 .overlay button {
+  color: black;
   border: 1px solid white;
   background: none;
   font-size: 1.2rem;
@@ -192,26 +216,26 @@ body {
   cursor: pointer;
 }
 
-.s3 .works .work1 .overlay button a {
-  color: rgb(240, 240, 240);
+.s2 .works .work1 .overlay button a {
+  color: black;
   text-decoration: none;
 }
 
-.s3 .buttons {
-  margin-top: 5rem;
+.s2 .buttons {
+  margin-top: 4rem;
 }
 
-.s3 .works .work1:hover .overlay {
+.s2 .works .work1:hover .overlay {
   opacity: 1;
 }
 
-.s3 .buttons i {
-  margin: 0 5rem;
+.s2 .buttons i:first-child {
+  margin-right: 10rem;
 }
 
 .s4 {
   display: none;
-  color: rgb(240, 240, 240);
+  color: black;
 }
 
 .s4 h1 {
@@ -220,7 +244,7 @@ body {
 }
 
 .s4 .acs i {
-  color: #969696;
+  color: black;
   font-size: 4rem;
   margin-right: 4rem;
   margin-bottom: 4rem;
@@ -233,7 +257,7 @@ body {
 
 .rhs,
 .rhs1,
-.rhs2 {
+.rhs3 {
   margin-top: 6rem;
 }
 
@@ -242,21 +266,31 @@ body {
 }
 
 .arrow:hover {
-  color: rgb(145, 54, 230);
+  color: #260080;
 }
 
 @media only screen and (max-width: 450px) {
-  .s1 h2 {
+  .s1 h1 {
     font-size: 4rem;
   }
-  .s1 h3 {
+  .s1 h2 {
+    font-size: 3rem;
+  }
+
+  .s1 h3{
     font-size: 2.5rem;
+  }
+  .s2 h1 {
+    font-size: 3rem;
+  }
+  .s2 p{
+    font-size: 1.3rem;
   }
   .s3 h2 {
     margin-top: 4rem;
   }
-  .s3 .works {
-    flex-direction: column;
+  .s3 p {
+    font-size: 1.5rem;
   }
   .s3 .works .work1 {
     margin-top: 1rem;
@@ -280,20 +314,20 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
-  .s2 h1 {
+  .s3 h1 {
     font-size: 3.5rem;
   }
-  .s2 .skills {
+  .s3 .skills {
     justify-content: space-around;
   }
-  .s2 .skills i {
+  .s3 .skills i {
     font-size: 4.5rem;
     margin-right: 1rem;
   }
-  .s2 .lin2 {
+  .s3 .lin2 {
     margin-left: 0.1rem;
   }
-  .s2 h4 i {
+  .s3 h4 i {
     margin: 0 2rem;
   }
   .s3 h2 {
